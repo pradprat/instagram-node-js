@@ -1,9 +1,9 @@
 <h3>cara install :</h3>
-download projectnya
-extract
-buka CMD
-arahkan ke directory project
-lalu ketik
+1. download projectnya<br>
+2. extract<br>
+3. buka CMD<br>
+4. arahkan ke directory project<br>
+5. lalu ketik<br>
 <pre>npm install nodemon</pre>
 
 <h3>cara Run :</h3>
