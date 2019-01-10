@@ -1,3 +1,10 @@
-A project requesting users to authenticate with instagram. 
+<h3>cara install :</h3>
+download projectnya
+extract
+buka CMD
+arahkan ke directory project
+lalu ketik
+<pre>npm install nodemon</pre>
 
-The code is explained in [my tutorial](https://dev.to/aurelkurtula/working-with-instagram-api-and-passportjs-in-a-node-application--5068)
+<h3>cara Run :</h3>
+<pre>npm start</pre>
