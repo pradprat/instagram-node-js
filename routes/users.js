@@ -14,7 +14,7 @@ router
     .then(function (response) {
       const data = response.data.data;
       let user = req.user;
-      user.images = data.map(img => img.images);
+      user.images = data.map(img => img);
       res.render('instagram', user)  
     })
   })

@@ -3,15 +3,24 @@ html
   head
     title=title
     link(rel='stylesheet', href='/style.css')
+    script(defer='' src='https://use.fontawesome.com/releases/v5.6.3/js/all.js' integrity='sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1' crossorigin='anonymous')
     meta(name='viewport' content='windth=device-width, initial-scale=1')
 body 
-  .wrap 
-    img.cover(src=images[1].standard_resolution.url)
+  .wrap
+    .displayPict
+      img.cover(src=images[6].images.standard_resolution.url)
     .content
       h1=name
-      a(href=homePage) website
+      //- a(href=homePage) website
       p=bio
-      each image, i in images
-        img.shots(src=image.thumbnail.url)
+  .images
+    each image, i in images
+      .image
+        h1.postinfo
+          i.fas.fa-heart
+          =image.likes.count+" "
+          i.fas.fa-comment
+          =image.comments.count
+        img.shots(src=image.images.standard_resolution.url)
         
-      a(href='/logout') Logout
+  a.logout(href='/logout') Logout

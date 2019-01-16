@@ -10,15 +10,16 @@ export function instagram(){
     callbackURL: "http://localhost:3000/auth/instagram/callback"
 };
   passport.use(
-    new InstagramStrategy(access, 
-    (accessToken, refreshToken, profile, done) => {
+    new InstagramStrategy
+    (access, (accessToken, refreshToken, profile, done) => {
       let user = {};
+      user.accessToken = accessToken;
       user.name = profile.displayName;
       user.homePage = profile._json.data.website;
       user.image = profile._json.data.profile_picture;
       user.bio = profile._json.data.bio;
       user.media = `https://api.instagram.com/v1/users/${profile.id}/media/recent/?access_token=${accessToken}&count=8`
-      done(null, user)  
+      done(null, user)
     })
   )
 }
