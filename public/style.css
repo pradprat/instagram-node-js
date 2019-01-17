@@ -43,17 +43,16 @@ body{
 
 .images{
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   padding: 16px;
 }
 
 .image{
-  width: 30vw;
+  width: 23vw;
   height: 45vh;
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   overflow: hidden;
-  margin-bottom: 8px;
-  margin-top: 8px;
+  margin: 8px;
 }
 .shots{
   object-fit: cover;
@@ -84,4 +83,8 @@ body{
   font-family: 'Catamaran', sans-serif;
   font-size: 20px;
   margin-left: 16px;
+}
+.login{
+  width: 600px;
+  height: 200px;
 }
