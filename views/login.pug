@@ -2,8 +2,14 @@ doctype html
 html
   head
     title=title
+    script(defer='' src='https://use.fontawesome.com/releases/v5.6.3/js/all.js' integrity='sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1' crossorigin='anonymous')
     link(rel='stylesheet', href='/style.css')
     meta(name='viewport' content='windth=device-width, initial-scale=1')
-body 
-  .login 
-    a(href='/auth/instagram') Login with instagram
+body.login-body
+
+  a(href='/auth/instagram') 
+    .login 
+      h1
+        i.fab.fa-instagram 
+        |  Login with Instagram
+  p.cpy Copyright © 2010 by Kelompok Pradika. All rights reserved. This website is created to fulfill the assignments

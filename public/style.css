@@ -84,7 +84,36 @@ body{
   font-size: 20px;
   margin-left: 16px;
 }
+a{
+  text-decoration: none;
+}
 .login{
-  width: 600px;
-  height: 200px;
+  width: 400px;
+  padding: 16px;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  position: absolute;
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.login > h1{
+  font-family: 'Catamaran', sans-serif;
+  font-size: 30px;
+  word-spacing: auto;
+  text-align: center;
+  color: white;
+}
+.login-body{
+  background: rgba(128, 128, 128, 0.116);
+}
+.cpy{
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  font-family: 'Catamaran', sans-serif;
+  margin-left: 16px;
 }
